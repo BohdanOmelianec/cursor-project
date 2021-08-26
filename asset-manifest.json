@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/cursor-project/static/js/main.064a2a19.chunk.js",
-    "main.js.map": "/cursor-project/static/js/main.064a2a19.chunk.js.map",
+    "main.js": "/cursor-project/static/js/main.51c6e3d9.chunk.js",
+    "main.js.map": "/cursor-project/static/js/main.51c6e3d9.chunk.js.map",
     "runtime-main.js": "/cursor-project/static/js/runtime-main.3323afe1.js",
     "runtime-main.js.map": "/cursor-project/static/js/runtime-main.3323afe1.js.map",
-    "static/js/2.8949f07b.chunk.js": "/cursor-project/static/js/2.8949f07b.chunk.js",
-    "static/js/2.8949f07b.chunk.js.map": "/cursor-project/static/js/2.8949f07b.chunk.js.map",
+    "static/js/2.a0261418.chunk.js": "/cursor-project/static/js/2.a0261418.chunk.js",
+    "static/js/2.a0261418.chunk.js.map": "/cursor-project/static/js/2.a0261418.chunk.js.map",
     "index.html": "/cursor-project/index.html",
-    "static/js/2.8949f07b.chunk.js.LICENSE.txt": "/cursor-project/static/js/2.8949f07b.chunk.js.LICENSE.txt",
+    "static/js/2.a0261418.chunk.js.LICENSE.txt": "/cursor-project/static/js/2.a0261418.chunk.js.LICENSE.txt",
     "static/media/mywallet.5bbd8db1.png": "/cursor-project/static/media/mywallet.5bbd8db1.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3323afe1.js",
-    "static/js/2.8949f07b.chunk.js",
-    "static/js/main.064a2a19.chunk.js"
+    "static/js/2.a0261418.chunk.js",
+    "static/js/main.51c6e3d9.chunk.js"
   ]
 }
