@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
 const Navigator = styled.div`
 	width: 8%;
-	height: 100vh;
+	min-height: 100vh;
 	background: #efefef;
 	padding: 50px;
 	display: flex;
@@ -45,12 +45,13 @@ const Logo = styled.img`
 
 const Content = styled.div`
 	width: 100%;
-	background-image: url(${background});
-	background-repeat: no-repeat;
-`
+`;
 
 const Balance = styled.div`
-	height: 100px;
+	background-image: url(${background});
+	background-size:  cover;
+	background-repeat: no-repeat;
+	height: 150px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -60,7 +61,6 @@ const Balance = styled.div`
 
 const BalanceHeader = styled.h3`
 	margin: 10px 20px;
-	color: #b3abab;
 `
 const MoneyHeader = styled.h2`
 	margin: 0 20px;

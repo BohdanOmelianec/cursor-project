@@ -15,6 +15,8 @@ const Table = styled.div`
     border-top: 1px solid #cacaca;
     border-bottom: 1px solid #cacaca;
     padding: 10px 20px;
+    margin-top: 15px; 
+    color: grey;
 `;
 
 const Filter = styled.div`
@@ -23,7 +25,6 @@ const Filter = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    margin-top: 10px;
 `;
 
 const InputBlock = styled.div`
@@ -36,21 +37,22 @@ export const Input = styled.input`
     margin: 0 10px;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 	border: none;
-	font-size: 18px;
+	font-size: 14px;
 	text-align: center;
 	outline: 0;
 `;
 
 const Span = styled.span`
-    font-size: 18px;
+    width: 50px;
+    font-size: 14px;
     font-weight: 500;
     display: inline-block;
-    margin: 25px 10px 25px 0;  
+    margin: 15px 10px 15px 0;  
     color: #5f5f5f;
 `;
 
 const Select = styled.select`
-    font-size: 18px;
+    font-size: 14px;
     padding: 5px;
     margin: 0 10px;
     border: none;
@@ -73,7 +75,7 @@ const FilterBtn = styled.button`
     padding: 5px;
     margin: 0 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    font-size: 18px;
+    font-size: 14px;
     color: #5f5f5f;
 	text-align: center;
     border: none;

@@ -10,6 +10,9 @@ const Row = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 50px;
     padding: 10px 20px;
+    &:nth-child(odd) {
+        background-color: #f1f1f1;
+    }
 `;
 
 export default function TableRow({data, removeId, arr, target}) {
