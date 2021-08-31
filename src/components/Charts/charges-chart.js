@@ -1,10 +1,17 @@
 import React from 'react';
 //npm install --save react-chartjs-2 chart.js
 import { Pie } from 'react-chartjs-2';
-import Flex from '../StyledComponents/Flex'
+import Flex from '../StyledComponents/Flex';
+import styled from 'styled-components';
 
-const ChargesChart = (props) => {
+const DesignedFlex = styled(Flex)`
+  &:hover {
+    background-color: rgba(132,125,115,0.1)
+  }
+`;
 
+const ChargesChart = ({chargesLabels, chargesData}) => {
+    
     function randomColor() {
         const h = Math.random() * 360;
         const s = Math.random() * (100 - 60) + 60;
@@ -13,29 +20,27 @@ const ChargesChart = (props) => {
         return `hsl(${h}, ${s}%, ${l}%)`;
     }
 
-    const labels = Object.values(props);
-    const uniqueLabels = labels.filter((item, index) => labels.indexOf(item) === index);
-
+       
     function backgroundColor() {
         let backgroundColors = [];
-        for(let i = 0; i < uniqueLabels.length; i++) {
+        for(let i = 0; i < chargesLabels.length; i++) {
             backgroundColors = [...backgroundColors, randomColor()];
         }
         return backgroundColors;
     }
 
     const data = {
-        labels: uniqueLabels,
+        labels: chargesLabels,
         datasets: [{
         label: 'Charges by category',
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: chargesData,
         backgroundColor: backgroundColor(),
         }]
     };
 
 
     return (
-        <Flex>
+        <DesignedFlex>
         <Pie
           data={data}
           height={200}
@@ -54,7 +59,7 @@ const ChargesChart = (props) => {
               maintainAspectRatio: false,
           }}
         />
-        </Flex>
+        </DesignedFlex>
     )
 }
 
